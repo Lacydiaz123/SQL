@@ -1,0 +1,28 @@
+-Create a shoe store database
+
+CREATE TABLE Shoes (id INTEGER PRIMARY KEY, Brand text, Name text, Quantity integer, sales integer, price integer);
+
+INSERT INTO shoes VALUES (1, "nike", "air jordan 1s", 45, 138849, 170);
+INSERT INTO Shoes VALUES (2, "nike", "97s", 83, 43749,120);
+INSERT INTO SHoes VALUES (3, "adidas", "yeezys", 165, 54563,200); 
+INSERT INTO Shoes VALUES (4, "adidas", "ultraboost", 23, 38739,100);
+INSERT INTO Shoes VALUES (5, "adidas", "originals", 83, 39852, 115);
+INSERT INTO Shoes VALUES (6, "nike", "blazers", 65, 87493, 130);
+INSERT INTO Shoes VALUES (7, "new balance", "550s", 48, 54399, 110);
+INSERT INTO Shoes VALUES (8, "new balance", "574 core", 124, 39289, 100);
+INSERT INTO Shoes VALUES (9, "nike", "dunks", 14, 92347,120);
+INSERT INTO Shoes VALUES (10, "nike", "air max", 76, 74638,160);
+INSERT INTO Shoes VALUES (11, "adidas", "boost", 34, 45672, 120);
+INSERT INTO Shoes VALUES (12, "converse", "high tops", 68, 37845,90);
+INSERT INTO Shoes VALUES (13, "converse", "low tops", 128, 54783,75);
+INSERT INTO Shoes VALUES (14, "puma", "roma", 32, 28930, 65);
+INSERT INTO Shoes VALUES (15, "puma", "future rider", 29, 32109,80);
+
+-Display shoes priced under 120 dollars with price in descending order
+SELECT * FROM Shoes;
+SELECT * FROM Shoes 
+WHERE "price" < "120"
+ORDER BY "price" desc;
+
+-display the maximuim price of a shoe in the database
+Select MAX(price) FROM Shoes;
