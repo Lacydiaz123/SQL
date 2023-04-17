@@ -1,0 +1,39 @@
+/* Create table about the people and what they do here */
+
+/*Music Artist*/
+
+CREATE TABLE Music_Artist ( Id INTEGER PRIMARY KEY, Name text, Age integer, Genre text);
+
+INSERT into Music_Artist VALUES (1, "The Weeknd", 33, "RnB");
+INSERT into Music_Artist VALUES (2, "Drake",36, "Hip-Hop/Rap");
+INSERT into Music_Artist VALUES (3, "Future", 39, "Hip-Hop/Rap");
+INSERT into Music_Artist VALUES (4, "Bryson Tiller", 30, "RnB");
+INSERT into Music_Artist VALUES (5, "Jhene Aiko", 35, "RnB");
+INSERT into Music_Artist VALUES (6, "SZA", 33, "RnB");
+INSERT into Music_Artist VALUES (7, "Lil Baby", 28, "Hip-Hop/Rap");
+INSERT into Music_Artist VALUES (8, "Travis Scott", 31, "Hip-Hop/Rap");
+
+
+CREATE TABLE Songs (Song_Id INTEGER PRIMARY KEY, Title text, Artist_Id integer, Featured_Artist_Id text);
+
+INSERT into Songs VALUES (1, "Rambo", 1,4);
+INSERT into Songs VALUES (2, "Low Life",3,1);
+INSERT into Songs VALUES (3, "Love Galore",6,8);
+INSERT into Songs VALUES (4, "From Time",2,5);
+INSERT into Songs VALUES (5, "Crew Love",2,1);
+INSERT into Songs VALUES (6, "Wants and Needs",2,7);
+INSERT into Songs VALUES (7, "SICKO MODE",7,2);
+INSERT into Songs VALUES (8, "Open Arms",6,8);
+INSERT into Songs VALUES (9, "Portland", 2,8);
+INSERT into Songs VALUES (10, "Pray 4 Love",8,1);
+INSERT into Songs VALUES (11, "Live Off My Closet",7,3);
+INSERT into Songs VALUES (12, "Never Recover",7,2);
+INSERT into Songs VALUES (13, "WAKE UP",8,1);
+INSERT into Songs VALUES (14, "SKELETONS", 8,1);
+INSERT into Songs VALUES (15, "Coming Out Strong",3,1);
+INSERT into Songs VALUES (16, "Outta Time",4,2);
+INSERT into Songs VALUES (17, "Life Is Good",3,2);
+INSERT into Songs VALUES (18, "Where Ya At", 3,2);
+INSERT into Songs VALUES (19, "WAIT FOR U",3,2);
+INSERT into Songs VALUES (20, "Grammys",2,3);
+
